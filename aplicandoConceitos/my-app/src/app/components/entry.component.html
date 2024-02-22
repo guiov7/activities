@@ -1,0 +1,17 @@
+<!-- modo EXTENSO -->
+<input 
+    type="text" 
+    [value]="placeholder" 
+    (input)="placeholder = $any($event.target).value" 
+/>
+<p>{{ placeholder }}</p>
+
+<!-- modo OBJETIVO -->
+<input 
+    type="password"
+    [(ngModel)]="placepass"
+/>
+<p [style.color]="color">{{ placepass }}</p> <!-- STYLE BLINDING -->
+<!-- 
+    ngModel é uma funcionalidade que depende do import das interfaces 
+   NgModel + FormsModule do Angular -->

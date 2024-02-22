@@ -1,0 +1,23 @@
+<hello name="{{ name }}"></hello>
+<menu-component></menu-component>
+<my-study></my-study>
+<h1>Hello WORLDÃO!</h1>
+
+<!-- INTERPOLAÇÃO -->
+<my-button label="ADICIONAR aos Favoritos"></my-button>
+
+<!-- EVENT BINDING = disparo de evento através da props. ex: (click) -->
+<my-button label="{{ buttonLabel }}"></my-button>
+<br>
+
+<!-- DATA BINDING = associação de dados -->
+<my-button [label]="buttonSecond"></my-button>
+<my-button [label]="'CARRINHO'"></my-button>
+
+<!-- 
+    TWO WAY DATA BINDING = associação de dados entre FIELDS html, 
+    com passagem de DYNAMIC EVENT BINDING pelo typescript. 
+-->
+<app-entry-data></app-entry-data>  
+
+<!-- Como vemos acima, há 4 maneiras diferentes de PASSAR CONTEÚDO e obter SAME RESULT -->
